@@ -7,15 +7,23 @@ def push_task(
     priority: int,
     task: str
 ) -> List[tuple[int, str]]:
-    heapq.heappush(heap, (priority, task))
-    return heap
+    pass
 
 
 def get_next_task(heap: List[tuple[int, str]]) -> str:
-    priority, task = heap[0]
-    return task
+    pass
 
 
 def pop_next_task(heap: List[tuple[int, str]]) -> str:
-    priority, task = heapq.heappop(heap)
-    return task
+    pass
+
+
+# do not modify below this line
+print(push_task([(2, "B"), (5, "E")], 1, "A"))
+print(push_task([(3, "C"), (7, "G")], 2, "B"))
+
+print(get_next_task([(1, "A"), (3, "C"), (2, "B")]))
+print(get_next_task([(2, "B"), (5, "E"), (4, "D")]))
+
+print(pop_next_task([(1, "A"), (3, "C"), (2, "B")]))
+print(pop_next_task([(2, "B"), (5, "E"), (4, "D")]))
