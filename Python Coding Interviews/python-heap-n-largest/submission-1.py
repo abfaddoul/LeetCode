@@ -1,0 +1,25 @@
+import heapq
+from typing import List
+
+
+def get_n_largest(numbers: List[int], n: int) -> List[int]:
+    return heapq.nlargest(n, numbers)
+
+
+def get_largest(numbers: List[int]) -> int:
+    return heapq.nlargest(1, numbers)[0]
+
+
+def sum_n_largest(numbers: List[int], n: int) -> int:
+    return sum(heapq.nlargest(n, numbers))
+
+
+# do not modify below this line
+print(get_n_largest([8, 3, 5, 1, 9, 2], 3))
+print(get_n_largest([10, 4, 7, 2, 6], 2))
+
+print(get_largest([5, 9, 2, 7]))
+print(get_largest([12, 3, 8, 4]))
+
+print(sum_n_largest([8, 3, 5, 1, 9, 2], 3))
+print(sum_n_largest([10, 4, 7, 2, 6], 2))
