@@ -2,40 +2,15 @@ from typing import List
 
 
 def reverse_list(numbers: List[int]) -> List[int]:
-    left, right = 0, len(numbers) - 1
-    while left < right:
-        temp = numbers[right]
-        numbers[right] = numbers[left]
-        numbers[left] = temp
-        left += 1
-        right -= 1
-    return numbers
+    pass
 
 
 def is_palindrome(word: str) -> bool:
-    left, right = 0, len(word) - 1
-    while left < right:
-        if word[left] != word[right]:
-            return False
-        left += 1
-        right -= 1
-    return True
+    pass
 
 
 def sum_from_ends(numbers: List[int]) -> List[int]:
-    left, right = 0, len(numbers) - 1
-    res = []
-
-    while left <= right:
-        if left == right:
-            res.append(numbers[left])
-        else:
-            res.append(numbers[left] + numbers[right])
-
-        left += 1
-        right -= 1
-
-    return res
+    pass
 
 
 # do not modify below this line
